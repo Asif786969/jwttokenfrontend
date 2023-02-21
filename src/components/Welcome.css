@@ -1,0 +1,54 @@
+p {
+    font-size: 18px;
+    line-height: 1;
+    padding: 10px 30px;
+  }
+  
+ 
+
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header .logout-btn {
+    background-color: white;
+    color: #3498db;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .logout-btn svg {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .header .spacer {
+    flex-grow: 1;
+  }
+  
+  .content {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  
+  
+  
