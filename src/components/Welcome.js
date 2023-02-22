@@ -8,26 +8,26 @@ import './Welcome.css';
 export const Welcome = () => {
   //const stringtoken="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJWaXZlayIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY3Mzk1NzYzMX0.N0jzWevB63PTOJBrZsPpWDUNp-k78kkKo6iWJ_wRyGA"
   
-  // axios.post('http://localhost:8090/welcome/auth',localStorage.getItem("token"))
-  //   .then(response=>{
-  //     console.log("welcome"+response.data)
-  //   })
-  //   .catch(error=>{
-  //     console.log("something wrong")
-  //     navigate("/login")
-  //   })
-  //   const navigate=useNavigate()
-  //   const handleClick = (event) => {
-  //     event.preventDefault();
-  //     localStorage.removeItem("token")
-  //     navigate("/login")
-  //   }
+  axios.post('http://localhost:8090/welcome/auth',localStorage.getItem("token"))
+    .then(response=>{
+      console.log("welcome"+response.data)
+    })
+    .catch(error=>{
+      console.log("something wrong")
+      navigate("/login")
+    })
+    const navigate=useNavigate()
+    const handleClick = (event) => {
+      event.preventDefault();
+      localStorage.removeItem("token")
+      navigate("/login")
+    }
   return (
     <div>
          <div className="header">
         <h1 className="logo">Welcome to our Bookstore</h1>
         <div className="spacer"></div>
-        <button className="logout-btn">
+        <button onClick={handleClick} className="logout-btn">
           <FontAwesomeIcon icon={faSignOutAlt} /> Logout
         </button>
       </div>

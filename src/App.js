@@ -13,11 +13,11 @@ function App() {
       <Router>
         <Routes>
           <Route element={<LoginForm/>} path="/login"></Route>
-          <Route element={<Welcome/>} path="/welcome"></Route>
+          {/* <Route element={<Welcome/>} path="/welcome"></Route> */}
 
-          {/* <Route element={<PrivateRoute/>}>
+          <Route element={<PrivateRoute/>}>
             <Route element={<Welcome/>} path="/welcome"></Route>
-          </Route>  */}
+          </Route> 
           {/* <Route elemenet={istoken?<Welcome/>:Navigate("/login")}  path="/welcome"></Route> */}
           
         </Routes>
